@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import pickle
 
-loaded_model = pickle.load(open('Customer_churn_prediction.pkl', 'rb'))
+loaded_model = pickle.load(open('Disease_prediction.pkl', 'rb'))
 sc = pickle.load(open('sc.pkl', 'rb'))
 
 st.header(" DISEASE PREDICTION ")
