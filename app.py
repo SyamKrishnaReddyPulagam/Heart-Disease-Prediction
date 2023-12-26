@@ -13,7 +13,7 @@ background_image = Image.open('assets/image.jpg')
 page_bg = '''
 <style>
 body {
-background-image: url("data:image/jpeg;base64,%s");
+background-image:background_image ;
 background-size: cover;
 }
 </style>
