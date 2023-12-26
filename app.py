@@ -6,6 +6,7 @@ import pickle
 loaded_model = pickle.load(open('Disease_prediction.pkl', 'rb'))
 sc = pickle.load(open('sc.pkl', 'rb'))
 
+st.image("image.jpg",width=500)
 st.markdown(
     """
     <h1 style='text-align: center;'>DISEASE PREDICTION</h1>
