@@ -17,7 +17,6 @@ background-image:background_image ;
 background-size: cover;
 }
 </style>
-''' % base64.b64encode(background_image.getvalue()).decode()
 
 # Display the background image
 st.markdown(page_bg, unsafe_allow_html=True)
