@@ -6,21 +6,6 @@ import pickle
 loaded_model = pickle.load(open('Disease_prediction.pkl', 'rb'))
 sc = pickle.load(open('sc.pkl', 'rb'))
 
-from PIL import Image
-background_image = Image.open('assets/image.jpg')
-
-# Set the background image as the page background
-page_bg = '''
-<style>
-body {
-background-image:background_image ;
-background-size: cover;
-}
-</style>
-
-# Display the background image
-st.markdown(page_bg, unsafe_allow_html=True)
-
 st.markdown(
     """
     <h1 style='text-align: center;'>DISEASE PREDICTION</h1>
