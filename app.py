@@ -6,17 +6,21 @@ import pickle
 loaded_model = pickle.load(open('Disease_prediction.pkl', 'rb'))
 sc = pickle.load(open('sc.pkl', 'rb'))
 
-st.markdown(
-    f"""
-    <style>
-    .reportview-container {{
-        background: url("{'https://dataconomy.com/wp-content/uploads/2023/09/effective-heart-disease-prediction-using-hybrid-machine-learning-techniques.jpg'}");
-        background-size: cover;
-    }}
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+from PIL import Image
+background_image = Image.open('assets/background_image.jpg')
+
+# Set the background image as the page background
+page_bg = '''
+<style>
+body {
+background-image: url("data:image/jpeg;base64,%s");
+background-size: cover;
+}
+</style>
+''' % base64.b64encode(background_image.getvalue()).decode()
+
+# Display the background image
+st.markdown(page_bg, unsafe_allow_html=True)
 
 st.markdown(
     """
