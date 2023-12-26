@@ -6,7 +6,7 @@ import pickle
 loaded_model = pickle.load(open('Disease_prediction.pkl', 'rb'))
 sc = pickle.load(open('sc.pkl', 'rb'))
 
-st.header(" DISEASE PREDICTION ")
+st.header("               DISEASE PREDICTION ")
 
 col1,col2= st.columns(2)
 with col1:
@@ -38,10 +38,10 @@ with col3:
 with col4:
    FastingBS=st.number_input("FastingBS",min_value=0,max_value=1,value=1,step=1)
 
-RestingECG=st.selectbox("RestingECG",['Normal','LVH','ST'],index=0)
-if RestingECG=="":
+RestingECG=st.selectbox("RestingECG",['               Normal','               LVH','               ST'],index=0)
+if RestingECG=="               Normal":
    RestingECG=1
-elif RestingECG=="":
+elif RestingECG=="               LVH":
    RestingECG=0
 else:
    RestingECG=2
