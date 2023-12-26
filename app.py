@@ -69,10 +69,10 @@ with col7:
 if st.button("PREDICT"):
     classifier=loaded_model.predict(sc.transform([[Age,sex,ChestPainType,RestingBP,Cholesterol,FastingBS,RestingECG,ExerciseAngina,Oldpeak,ST_Slope]]))
     if classifier == 0:
-        st.error("You are not affected by HeartDisease")
+        st.success("You are not affected by HeartDisease")
         st.write("<span style='font-size: 30px;'>You are SAFE!!!</span>", unsafe_allow_html=True)
     else:
-        st.success("You are affected by HeartDisease")
+        st.error("You are affected by HeartDisease")
         st.write("<span style='font-size: 30px;'>Consult Doctor IMMEDIATELY!!</span>", unsafe_allow_html=True)
 st.write("")	
 st.write("A PROJECT BY")
