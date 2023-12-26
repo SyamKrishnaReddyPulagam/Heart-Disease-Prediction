@@ -6,7 +6,12 @@ import pickle
 loaded_model = pickle.load(open('Disease_prediction.pkl', 'rb'))
 sc = pickle.load(open('sc.pkl', 'rb'))
 
-st.write("<h1 style='text-align: center; ">DISEASE PREDICTION</h1>", unsafe_allow_html=True)
+st.markdown(
+    """
+    <h1 style='text-align: center;'>DISEASE PREDICTION</h1>
+    """,
+    unsafe_allow_html=True
+)
 
 col1,col2= st.columns(2)
 with col1:
