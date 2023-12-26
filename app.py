@@ -7,7 +7,7 @@ loaded_model = pickle.load(open('Disease_prediction.pkl', 'rb'))
 sc = pickle.load(open('sc.pkl', 'rb'))
 
 from PIL import Image
-background_image = Image.open('assets/background_image.jpg')
+background_image = Image.open('assets/image.jpg')
 
 # Set the background image as the page background
 page_bg = '''
