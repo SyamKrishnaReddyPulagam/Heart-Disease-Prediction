@@ -7,6 +7,18 @@ loaded_model = pickle.load(open('Disease_prediction.pkl', 'rb'))
 sc = pickle.load(open('sc.pkl', 'rb'))
 
 st.markdown(
+    f"""
+    <style>
+    .reportview-container {{
+        background: url("{'https://dataconomy.com/wp-content/uploads/2023/09/effective-heart-disease-prediction-using-hybrid-machine-learning-techniques.jpg'}");
+        background-size: cover;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown(
     """
     <h1 style='text-align: center;'>DISEASE PREDICTION</h1>
     """,
